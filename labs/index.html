@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab</title>
+</head>
+<body>
+ <form action="/action_page.php" >
+     <label for="fname">Enter your first name</label>
+     <input type="name"id="fname"value="Soumya" placeholder="Soumya"  maxlength="25" required><br><br>
+     <label for="lname">Enter your last name</label>
+     <input type="name"id="lname"value="lname" required><br><br>
+     <label for="email" >Enter your email id</label>
+     <input type="email"id="email"value="soumya@gmail.com" autofocus required><br><br>
+     <label for="pwd">Enter your password</label>
+     <input type="password"id="pwd"value="password" minlength="6" required><br><br>
+    </form>   
+ <form>
+
+         <label for="category" required >Choose the category</label>
+         <select id="categories" name="category">
+         <option value="student">Student</option>
+         <option value="employee">employee</option>
+         <option value="freelancer">freelancer</option>
+     </select><br><br>
+ </form>
+ <form>
+     <label for="event">Event date</label>
+     <input type="date"for="event"value="date" required><br><br>
+ </form>
+
+    <form >
+        <p>Please select the required tickets:</p>
+        <input type="radio" id="t1" name="select_ticket" value="1 ticket" required>
+        <label for="t1">1 ticket</label><br><br>
+        <input type="radio" id="t2" name="select_ticket" value="2 tickets"selected >
+        <label for="t2">2 tickets</label><br><br>
+        <input type="radio" id="t3" name="select_ticket" value="3 tickets" >
+        <label for="t3">3 tickets</label><br><br>
+      
+ </form>
+ <form>
+     <label for="payment">Online Payment</label>
+     <input type="checkbox"id="payment"value="payment" required><br><br>
+ </form>
+ <form>
+     <label for="note">Notes</label>
+    <textarea id="note"value="note"name="note"rows="5"columns="50"placeholder="write notes here"></textarea><br><br>
+</textarea>
+ </form>
+ <form action="/action_page.php" method="get">
+    <button type="submit"value="submit" required>Submit</button><br><br>
+ </form>
+</body>
+</html>
